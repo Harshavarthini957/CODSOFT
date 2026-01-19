@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Landing Page</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Times New Roman', Times, serif;
+        }
+
+        body {
+            background-color: hwb(318 71% 20%);
+            color: #333;
+            line-height: 1.6;
+        }
+
+        header {
+            background: #b284be;
+            color: hsl(0, 2%, 9%);
+            padding: 20px 40px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        header h1 {
+            font-size: 25px;
+        }
+
+        nav a {
+            color: hsl(0, 2%, 10%);
+            margin-left: 20px;
+            text-decoration: none;
+            font-size: 16px;
+        }
+        .hero {
+    background: linear-gradient(
+        rgba(0,0,0,0.5),
+        rgba(0,0,0,0.5)
+    ),
+    url("background.png");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    color: #fff;
+    padding: 100px 40px;
+    text-align: center;
+}
+
+
+        .hero h2 {
+            font-size: 36px;
+            margin-bottom: 20px;
+        }
+
+        .hero p {
+            font-size: 18px;
+            max-width: 600px;
+            margin: auto;
+        }
+
+        .hero button {
+            margin-top: 30px;
+            padding: 12px 30px;
+            font-size: 16px;
+            border: none;
+            border-radius: 5px;
+            background: #fff;
+            color:  #8c0073;
+            cursor: pointer;
+        }
+        .features {
+            padding: 60px 40px;
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 30px;
+        }
+
+        .feature-box {
+            background:#e6e8fa;
+            padding: 25px;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px hsla(185, 73%, 79%, 0.918);
+            text-align: center;
+        }
+
+        .feature-box h3 {
+            margin-bottom: 10px;
+            color: hwb(0 42% 4%);
+        }
+
+        footer {
+            background: hsl(216, 5%, 81%);
+            color: hsl(0, 4%, 9%);
+            text-align: center;
+            padding: 20px;
+            margin-top: 40px;
+        }
+
+        footer p {
+            font-size: 14px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>My Landing Page</h1>
+        <nav>
+            <a href="#">Home</a>
+            <a href="#">About</a>
+            <a href="#">Services</a>
+            <a href="#">Contact</a>
+        </nav>
+    </header>
+
+    <section class="hero">
+        <h2>Welcome to Our Website</h2>
+        <p>Attractive landing page using HTML and CSS. This project helps beginners improve layout, styling, and design skills.</p>
+        <button>Get Started</button>
+    </section>
+
+    <section class="features">
+        <div class="feature-box">
+            <h3>Easy to Learn</h3>
+            <p>Uses basic HTML and CSS concepts suitable for beginners.</p>
+        </div>
+        <div class="feature-box">
+            <h3>Responsive Design</h3>
+            <p>Grid layout ensures proper alignment on different screen sizes.</p>
+        </div>
+        <div class="feature-box">
+            <h3>Creative Layout</h3>
+            <p>Encourages creativity with colors, spacing, and sections.</p>
+        </div>
+    </section>
+
+    <footer>
+        <p>© 2026 My Landing Page || Designed using HTML & CSS</p>
+    </footer>
+
+</body>
+</html>
