@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>View my Portfolio</title><br>
+  <style>
+    body { background: hsl(45, 3%, 72%); color:"Black"; line-height: 1; }
+    
+    header {
+      background:oklab(89.651% 0.05264 -0.02998);
+      color:hsl(254, 72%, 44%);
+      padding: 60px 20px;
+      text-align: center;
+    }
+   .navbar {
+  display: flex;
+  justify-content: center; 
+  background: #ff0090;
+  padding: 15px 0;
+}
+
+.menu {
+  list-style: none;        
+  display: flex;
+  gap: 30px;
+  padding: 0;
+}
+
+.menu li a {
+  text-decoration: none;
+  color: white;
+  font-size: 16px;
+}
+
+
+    .about img {
+      width: 500px;
+      height: 500px;
+      border-radius: 80%;
+      
+    }
+
+
+    .center-profile {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+    .skills ul {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+      gap: 15px;
+      list-style: none;
+    }
+    .skills li {
+      background: hwb(196 78% 6%);
+      padding: 15px;
+      text-align: center;
+      border-radius: 10px;
+      box-shadow: 0 5px 15px;
+      font-weight: 500;
+    }
+    .project-card {
+  width: 300px;
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  padding: 15px;
+  text-align: center;
+}
+
+.project-img {
+  width: 10px;      
+  height: 10px;   
+  object-fit: cover; 
+  border-radius: 8px;
+}
+
+    .resume a {
+      padding: 14px 28px;
+      background: hwb(315 58% 16%);
+      color: #fff;
+      border-radius: 30px;
+      font-weight: 600;
+    }
+    .resume{ background: hsl(179, 61%, 68%); }
+
+    .contact{ margin-bottom: 10px; font-size: 1.05rem; }
+
+    footer {
+      background: hwb(335 84% 12%);
+      color: hsl(218, 42%, 7%);
+      text-align: center;
+      padding: 20px;
+      font-size: 0.95rem;
+    }
+  </style>
+</head>
+<body>
+    <br>
+  <header>
+    <h1>Harshavarthini Rajamanickam</h1>
+    <p>Aspiring Full Stack Developer| Web Enthusiast</p>
+<nav class="navbar">
+  <ul class="menu">
+    <li><a href="#">Home</a></li>
+    <li><a href="#">About</a></li>
+    <li><a href="#">Skills</a></li>
+    <li><a href="#">Projects</a></li>
+    <li><a href="#">Contact</a></li>
+  </ul>
+</nav>
+
+  </header>
+
+  <section><br>
+    <h1>About Myself</h1><br>
+    <div class="about">
+      <img src="profile.jpeg" class="center-profile" border="5" alt="Profile Image" /><br>
+      <div style="
+    width: 70%;
+    margin: 50px auto;
+    padding: 20px;
+    border: 2px solid hsl(312, 51%, 49%);
+    border-radius: 500px;
+    background-color: #e8f48c;
+    font-family: 'Times New Roman', Times, serif;
+    line-height: 2;
+">
+    <p>
+        I am a self-learner, explorer, and aspiring entrepreneur with a strong passion for technology and innovation. 
+        Currently, I am exploring full stack development with a clear goal of becoming a skilled full stack developer. 
+        I am actively learning and working with HTML, CSS, and JavaScript, and I have a solid foundation in programming 
+        languages such as Java, Python, and C. I am a highly motivated individual with strong communication skills and 
+        a keen interest in continuous learning. I actively participate in the Readers Club, startup events, and 
+        hackathons, where I enjoy collaborating, problem-solving, and gaining real-world exposure to innovative ideas 
+        and emerging technologies.
+    </p>
+</div>
+    </div>
+  </section>
+
+  <section class="skills"><br>
+    <h2>Skills</h2>
+    <ul>
+      <li>Python Programming</li>
+      <li>HTML & CSS</li>
+      <li>JavaScript Basics</li>
+      <li>C programing</li>
+      <li>Java programing</li>
+      <li>Problem Solving</li>
+    </ul><br>
+  </section>
+
+  <section>
+   <h2>My Projects</h2>
+    <style>
+        body {
+            font-family: 'Times New Roman', Times, serif;
+            background-color: #e5e4e2;
+        }
+
+        .projects-container {
+            display: flex;
+            justify-content: center;
+            gap: 50px;
+            margin-top: 50px;
+            flex-wrap: wrap;
+        }
+
+        .project-box {
+            background-color: #d8bfd8;
+            width: 700px;
+            padding: 20px;
+            border-radius: 12px;
+            border-color: aqua;
+            box-shadow: 0 4px 10px #a6d5eae8;
+            transition: transform 0.3s;
+        }
+
+        .project-title {
+            font-size: 18px;
+            font-weight: bold;
+            color: "Black";
+            margin-bottom: 10px;
+        }
+
+        .project-desc {
+            font-size: 14px;
+            color: #555;
+            line-height: 1.6;
+        }
+    </style>
+</head>
+<body>
+
+<div class="projects-container">
+
+    <div class="project-box">
+        <div class="project-title">Project 1<br>Cricket Scoreboard System</div>
+        <img src="My Projects/Project 1.jpg" class="project -img"  /><br>
+        <div class="project-desc">
+            A C program-based application for managing cricket score records.
+        </div>
+    </div>
+
+    <div class="project-box">
+        <div class="project-title">Project 2<br>Smart Crop Decision Support Tool</div>
+        <img src="My Projects/Project 2.png"/><br>
+        <div class="project-desc">
+            A responsive website built using python,Tkinter,Pandas.
+        </div>
+    </div>
+
+    <div class="project-box">
+        <div class="project-title">Project 3<br>Url Shortening System</div>
+        <img src="My Projects/Project 3.jpg" class="center-profile"/><br>
+        <div class="project-desc">
+            A simple project regarding url shortening system using java concepts.
+        </div>
+    </div>
+
+</div><br>
+
+  <br></section><br>
+  <section class="resume"><br>
+    <br><h2>Resume</h2>
+    <p>
+      <a href="resume .pdf" download>Download My Resume (PDF)</a><br>
+    </p>
+  </section><br>
+
+  <section class="contact"><br>
+    <h2>Contact</h2>
+    <p>Email: harsharajamanickam@gmail.com</p>
+    <p>Linkedin:www.linkedin.com/in/harshavarthini-rajamanickam-64a178296 </p>
+    <p>Phone: +91 9345401967</p><br>
+  </section><br>
+
+  <footer><br>
+    <p>© 2026 Harshavarthini Rajamanickam. All Rights Reserved.</p><br>
+  </footer>
+
+</body>
+</html>
